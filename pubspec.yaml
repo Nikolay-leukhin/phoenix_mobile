@@ -67,6 +67,7 @@ flutter:
     - assets/images/
     - assets/images/splash_background.png
     - assets/abi/
+    - assets/
     - .env
     -
 flutter_launcher_icons:
@@ -74,3 +75,4 @@ flutter_launcher_icons:
   ios: true
   image_path: "assets/logo.png"
   min_sdk_android: 21
+  remove_alpha_ios: true

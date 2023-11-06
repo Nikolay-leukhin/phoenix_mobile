@@ -57,7 +57,7 @@ class _CustomButtonState extends State<CustomButton> {
         child: TextButton(
             onPressed: widget.isActive ? widget.onTap : () {},
             style: TextButton.styleFrom(
-              padding: EdgeInsets.zero,
+                padding: EdgeInsets.zero,
                 backgroundColor: widget.gradient == null
                     ? widget.isActive
                         ? widget.color
@@ -66,7 +66,7 @@ class _CustomButtonState extends State<CustomButton> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(widget.radius))),
             child: Text(widget.text,
-                style: AppTypography.font16w600
-                    .copyWith(color: widget.textColor, fontSize: widget.fontSize))));
+                style: AppTypography.font16w600.copyWith(
+                    color: widget.textColor, fontSize: widget.fontSize))));
   }
 }

@@ -86,4 +86,7 @@ abstract class RouteNames {
   static const String storeUserProducts = '/store/user/products';
 
   static const String develop = '/develop';
+
+  static const String cityMain = '/city';
+  static const String cityHistory = '/city/history';
 }

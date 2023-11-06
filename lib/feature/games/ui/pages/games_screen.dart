@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:izobility_mobile/feature/games/ui/widgets/games_card.dart';
 import 'package:izobility_mobile/localization/app_localizations.dart';
 import 'package:izobility_mobile/models/game.dart';
+import 'package:izobility_mobile/routes/go_routes.dart';
 import 'package:izobility_mobile/utils/ui/colors.dart';
 import 'package:izobility_mobile/utils/ui/fonts.dart';
 import 'package:izobility_mobile/utils/ui/gradients.dart';
@@ -176,7 +178,9 @@ class _GamesScreenState extends State<GamesScreen> {
                                     textColor: Colors.black,
                                     fontSize: 18,
                                     text: "Использовать",
-                                    onTap: () {},
+                                    onTap: () {
+                                      context.go(RouteNames.cityMain);
+                                    },
                                     width: double.infinity)
                               ],
                             ),

@@ -43,5 +43,7 @@ final mainRoutesNames = [
   RouteNames.mainQr,
   RouteNames.walletBurseMyOrder,
   RouteNames.profileReferal,
-  RouteNames.storeUserProducts
+  RouteNames.storeUserProducts,
+  RouteNames.cityMain,
+  RouteNames.cityHistory,
 ];

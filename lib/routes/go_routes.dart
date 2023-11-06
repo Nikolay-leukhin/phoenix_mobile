@@ -12,6 +12,7 @@ import 'package:izobility_mobile/feature/auth/ui/password_recovery_email.dart';
 import 'package:izobility_mobile/feature/auth/ui/verify_recovery_code.dart';
 import 'package:izobility_mobile/feature/cards/ui/pages/cards_screen.dart';
 import 'package:izobility_mobile/feature/cards/ui/pages/cards_add_screen.dart';
+import 'package:izobility_mobile/feature/city/ui/pages/city_main_screen.dart';
 import 'package:izobility_mobile/feature/games/ui/pages/games_details_screen.dart';
 import 'package:izobility_mobile/feature/games/ui/pages/games_loading_screen.dart';
 import 'package:izobility_mobile/feature/games/ui/pages/games_screen.dart';
@@ -289,6 +290,9 @@ class CustomGoRoutes {
       GoRoute(
           path: RouteNames.gamesDetailsLoading,
           builder: (context, state) => const GamesLoadingScreen()),
+      GoRoute(
+          path: RouteNames.cityMain,
+          builder: (context, state) => const CityMainScreen()),
       ShellRoute(
         navigatorKey: shellNavigatorKey,
         builder: (context, state, child) {
