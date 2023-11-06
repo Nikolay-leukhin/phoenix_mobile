@@ -4,6 +4,7 @@ import 'package:phoenix_mobile/localization/app_localizations.dart';
 import 'package:phoenix_mobile/routes/go_routes.dart';
 import 'package:phoenix_mobile/utils/ui/colors.dart';
 import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
 import 'package:phoenix_mobile/widgets/banners/game_banner.dart';
 
 class GamesScreen extends StatefulWidget {
@@ -76,7 +77,7 @@ class _GamesScreenState extends State<GamesScreen> {
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 26, vertical: 4),
                             decoration: BoxDecoration(
-                              color: Colors.purple,
+                              gradient: AppGradients.purple,
                               borderRadius: BorderRadius.circular(100),
                             ),
                             child: Row(
