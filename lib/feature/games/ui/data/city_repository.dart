@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:image_picker/image_picker.dart';
-import 'package:izobility_mobile/services/remote/api/api_service.dart';
+import 'package:phoenix_mobile/services/remote/api/api_service.dart';
 
 class CityRepository {
   final ApiService apiService;

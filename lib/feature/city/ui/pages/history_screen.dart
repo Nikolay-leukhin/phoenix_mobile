@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/city/ui/widgets/history_item.dart';
-import 'package:izobility_mobile/models/city_history_item.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/feature/city/ui/widgets/history_item.dart';
+import 'package:phoenix_mobile/models/city_history_item.dart';
+
+import '../../../../widgets/app_bar/custom_app_bar.dart';
 
 class CityHistoryScreen extends StatefulWidget {
   const CityHistoryScreen({super.key});
