@@ -1,0 +1,69 @@
+PODS:
+  - Flutter (1.0.0)
+  - local_auth_ios (0.0.1):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - share_plus (0.0.1):
+    - Flutter
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - SwiftProtobuf (1.23.0)
+  - trust_wallet_core_lib (0.0.1):
+    - Flutter
+    - TrustWalletCore
+  - TrustWalletCore (3.2.20):
+    - TrustWalletCore/Core (= 3.2.20)
+  - TrustWalletCore/Core (3.2.20):
+    - TrustWalletCore/Types
+  - TrustWalletCore/Types (3.2.20):
+    - SwiftProtobuf
+  - url_launcher_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - local_auth_ios (from `.symlinks/plugins/local_auth_ios/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - share_plus (from `.symlinks/plugins/share_plus/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - trust_wallet_core_lib (from `.symlinks/plugins/trust_wallet_core_lib/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftProtobuf
+    - TrustWalletCore
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  local_auth_ios:
+    :path: ".symlinks/plugins/local_auth_ios/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  share_plus:
+    :path: ".symlinks/plugins/share_plus/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+  trust_wallet_core_lib:
+    :path: ".symlinks/plugins/trust_wallet_core_lib/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  local_auth_ios: c6cf091ded637a88f24f86a8875d8b0f526e2605
+  path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943
+  share_plus: 599aa54e4ea31d4b4c0e9c911bcc26c55e791028
+  shared_preferences_foundation: 5b919d13b803cadd15ed2dc053125c68730e5126
+  SwiftProtobuf: b70d65f419fbfe61a2d58003456ca5da58e337d6
+  trust_wallet_core_lib: 1d25320104cd3a7fee634d5f57596200da2b5d7c
+  TrustWalletCore: 640ca389b23abaf0b55b8064fd6c23191c52af3f
+  url_launcher_ios: 08a3dfac5fb39e8759aeb0abbd5d9480f30fc8b4
+
+PODFILE CHECKSUM: a57f30d18f102dd3ce366b1d62a55ecbef2158e5
+
+COCOAPODS: 1.12.1
