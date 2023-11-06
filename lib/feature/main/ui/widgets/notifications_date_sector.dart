@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/main/ui/widgets/date_container.dart';
-import 'package:izobility_mobile/feature/main/ui/widgets/notification_coin_card.dart';
-import 'package:izobility_mobile/feature/main/ui/widgets/notification_text_card.dart';
-import 'package:izobility_mobile/models/notification_by_date.dart';
-import 'package:izobility_mobile/utils/logic/constants.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/feature/main/ui/widgets/date_container.dart';
+import 'package:phoenix_mobile/feature/main/ui/widgets/notification_coin_card.dart';
+import 'package:phoenix_mobile/feature/main/ui/widgets/notification_text_card.dart';
+import 'package:phoenix_mobile/models/notification_by_date.dart';
+import 'package:phoenix_mobile/utils/logic/constants.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 
 class NotificationsDateSector extends StatelessWidget {

@@ -1,9 +1,9 @@
-import 'package:izobility_mobile/models/referal.dart';
-import 'package:izobility_mobile/models/user.dart';
-import 'package:izobility_mobile/models/user_details.dart';
-import 'package:izobility_mobile/services/locale/preferences_service.dart';
-import 'package:izobility_mobile/services/remote/api/api_service.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/models/referal.dart';
+import 'package:phoenix_mobile/models/user.dart';
+import 'package:phoenix_mobile/models/user_details.dart';
+import 'package:phoenix_mobile/services/locale/preferences_service.dart';
+import 'package:phoenix_mobile/services/remote/api/api_service.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 import 'package:rxdart/rxdart.dart';
 
 class UserRepository {

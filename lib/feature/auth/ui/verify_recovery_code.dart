@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/auth/bloc/password_recovery/password_recovery_cubit.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/password_recovery/password_recovery_cubit.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
 
 import '../../../utils/logic/validators.dart';
 import '../../../widgets/button/custom_button.dart';
@@ -35,9 +35,9 @@ class _VerifyRecoveryCodeScreenState extends State<VerifyRecoveryCodeScreen> {
           const SizedBox(
             height: 32,
           ),
-          SvgPicture.asset(
-            'assets/icons/logo.svg',
-            width: 180,
+          Image.asset(
+            'assets/images/logo.png',
+            width: MediaQuery.sizeOf(context).width * 0.28,
           ),
           const SizedBox(
             height: 32,

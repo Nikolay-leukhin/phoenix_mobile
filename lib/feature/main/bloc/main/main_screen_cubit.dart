@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/main/data/main_repository.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/feature/main/data/main_repository.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 
 part 'main_screen_state.dart';
 

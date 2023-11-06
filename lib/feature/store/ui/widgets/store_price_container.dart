@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/store/ui/widgets/product_coin_price_container.dart';
-import 'package:izobility_mobile/models/market_item.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/feature/store/ui/widgets/product_coin_price_container.dart';
+import 'package:phoenix_mobile/models/market_item.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
 
 class StorePriceContainer extends StatelessWidget {
   final MarketItemModel marketItem;

@@ -1,9 +1,9 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:izobility_mobile/models/login_data.dart';
-import 'package:izobility_mobile/models/register_data.dart';
-import 'package:izobility_mobile/services/remote/api/api_service.dart';
+import 'package:phoenix_mobile/models/login_data.dart';
+import 'package:phoenix_mobile/models/register_data.dart';
+import 'package:phoenix_mobile/services/remote/api/api_service.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:local_auth_android/local_auth_android.dart';
 import 'package:local_auth_ios/local_auth_ios.dart';

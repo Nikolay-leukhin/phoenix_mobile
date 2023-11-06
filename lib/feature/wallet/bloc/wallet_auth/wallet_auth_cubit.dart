@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'wallet_auth_state.dart';

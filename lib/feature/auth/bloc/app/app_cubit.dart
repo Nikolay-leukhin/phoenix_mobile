@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:izobility_mobile/feature/main/data/main_repository.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/feature/store/data/store_repository.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/feature/main/data/main_repository.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/feature/store/data/store_repository.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
 
 import '../../data/auth_repository.dart';
 

@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/models/market_item.dart';
+import 'package:phoenix_mobile/models/market_item.dart';
 
 class UserProductModel {
   UserProductModel({

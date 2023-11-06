@@ -3,28 +3,28 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/main/bloc/main/main_screen_cubit.dart';
-import 'package:izobility_mobile/feature/main/data/main_repository.dart';
-import 'package:izobility_mobile/feature/main/ui/widgets/guides_suggestion_loading.dart';
-import 'package:izobility_mobile/feature/main/ui/widgets/market_item.dart';
-import 'package:izobility_mobile/feature/store/bloc/store_buy/store_buy_cubit.dart';
-import 'package:izobility_mobile/feature/wallet/bloc/coin_in_game/coin_in_game_cubit.dart';
-import 'package:izobility_mobile/feature/wallet/bloc/promo_code/promo_code_cubit.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/animations.dart';
-import 'package:izobility_mobile/utils/ui/dialogs.dart';
-import 'package:izobility_mobile/utils/utils.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
-import 'package:izobility_mobile/widgets/button_sheet/bottom_sheets.dart';
-import 'package:izobility_mobile/widgets/containers/cash_container.dart';
-import 'package:izobility_mobile/widgets/containers/utility_container.dart';
-import 'package:izobility_mobile/widgets/indicators/notifications_indicator.dart';
-import 'package:izobility_mobile/widgets/popup/popup_promo_failure.dart';
-import 'package:izobility_mobile/widgets/popup/popup_promo_success.dart';
-import 'package:izobility_mobile/widgets/snack_bar/custom_snack_bar.dart';
-import 'package:izobility_mobile/widgets/text_field/custom_text_field.dart';
+import 'package:phoenix_mobile/feature/main/bloc/main/main_screen_cubit.dart';
+import 'package:phoenix_mobile/feature/main/data/main_repository.dart';
+import 'package:phoenix_mobile/feature/main/ui/widgets/guides_suggestion_loading.dart';
+import 'package:phoenix_mobile/feature/main/ui/widgets/market_item.dart';
+import 'package:phoenix_mobile/feature/store/bloc/store_buy/store_buy_cubit.dart';
+import 'package:phoenix_mobile/feature/wallet/bloc/coin_in_game/coin_in_game_cubit.dart';
+import 'package:phoenix_mobile/feature/wallet/bloc/promo_code/promo_code_cubit.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/animations.dart';
+import 'package:phoenix_mobile/utils/ui/dialogs.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/widgets/button_sheet/bottom_sheets.dart';
+import 'package:phoenix_mobile/widgets/containers/cash_container.dart';
+import 'package:phoenix_mobile/widgets/containers/utility_container.dart';
+import 'package:phoenix_mobile/widgets/indicators/notifications_indicator.dart';
+import 'package:phoenix_mobile/widgets/popup/popup_promo_failure.dart';
+import 'package:phoenix_mobile/widgets/popup/popup_promo_success.dart';
+import 'package:phoenix_mobile/widgets/snack_bar/custom_snack_bar.dart';
+import 'package:phoenix_mobile/widgets/text_field/custom_text_field.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import '../../../../widgets/containers/guides_suggestion.dart';
@@ -79,7 +79,7 @@ class _MainScreenState extends State<MainScreen> {
               title: Row(
                 children: [
                   Image.asset(
-                    'assets/images/logo.png',
+                    'assets/images/mini_logo.png',
                     width: MediaQuery.sizeOf(context).width / 3.6,
                     fit: BoxFit.fitWidth,
                   ),

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_aspect.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_bloc_label.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_switch_card.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/scaffold/home_scaffold.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_aspect.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_bloc_label.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_switch_card.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/scaffold/home_scaffold.dart';
 
 class ProfileSettingsScreen extends StatefulWidget {
   const ProfileSettingsScreen({super.key});

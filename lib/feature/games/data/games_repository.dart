@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/models/games_details.dart';
+import 'package:phoenix_mobile/models/games_details.dart';
 
 class GamesRepository {
   var lastLoadedGameDetials = GamesDetailsModel(

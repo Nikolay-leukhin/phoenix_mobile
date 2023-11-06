@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/models/burse/burse_order.dart';
-import 'package:izobility_mobile/utils/logic/constants.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/models/burse/burse_order.dart';
+import 'package:phoenix_mobile/utils/logic/constants.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
 
 class OrderItem extends StatelessWidget {
   final VoidCallback onTap;

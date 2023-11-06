@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 
 class BurseTransferData{
   final String title;

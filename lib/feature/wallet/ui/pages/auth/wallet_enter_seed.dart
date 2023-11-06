@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/wallet/bloc/wallet_auth/wallet_auth_cubit.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/dialogs.dart';
-import 'package:izobility_mobile/utils/utils.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
-import 'package:izobility_mobile/widgets/scaffold/home_scaffold.dart';
-import 'package:izobility_mobile/widgets/snack_bar/custom_snack_bar.dart';
-import 'package:izobility_mobile/widgets/text_field/big_text_field.dart';
+import 'package:phoenix_mobile/feature/wallet/bloc/wallet_auth/wallet_auth_cubit.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/dialogs.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/widgets/scaffold/home_scaffold.dart';
+import 'package:phoenix_mobile/widgets/snack_bar/custom_snack_bar.dart';
+import 'package:phoenix_mobile/widgets/text_field/big_text_field.dart';
 
 class EnterSeedPhraseScreen extends StatefulWidget {
   const EnterSeedPhraseScreen({super.key});

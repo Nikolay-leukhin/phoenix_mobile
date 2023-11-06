@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 
 class NotificationCardContainer extends StatelessWidget {
   final NotificationPositionEnum pose;

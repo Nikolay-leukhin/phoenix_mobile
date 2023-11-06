@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/cards/ui/widgets/card_transaction_widget.dart';
-import 'package:izobility_mobile/feature/cards/ui/widgets/credit_card_widget.dart';
-import 'package:izobility_mobile/feature/wallet/ui/widgets/wallet_action.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/scaffold/home_scaffold.dart';
+import 'package:phoenix_mobile/feature/cards/ui/widgets/card_transaction_widget.dart';
+import 'package:phoenix_mobile/feature/cards/ui/widgets/credit_card_widget.dart';
+import 'package:phoenix_mobile/feature/wallet/ui/widgets/wallet_action.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/scaffold/home_scaffold.dart';
 
 class CardsScreen extends StatefulWidget {
   const CardsScreen({super.key});

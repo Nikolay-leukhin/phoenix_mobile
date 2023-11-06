@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:izobility_mobile/feature/main/bloc/story/story_cubit.dart';
+import 'package:phoenix_mobile/feature/main/bloc/story/story_cubit.dart';
 
 class StoryDurationIndicator extends StatefulWidget {
   const StoryDurationIndicator(

@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/services/remote/api/api_service.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/services/remote/api/api_service.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 
 part 'profile_state.dart';
 

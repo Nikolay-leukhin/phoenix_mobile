@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/profile/bloc/profile_links/profile_links_cubit.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/feature/wallet/ui/widgets/button_social_media_link.dart';
-import 'package:izobility_mobile/feature/wallet/ui/widgets/transaction_container.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/models/api/token_data.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/logic/constants.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_sliver_app_bar.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_sliver_app_bar_delegate.dart';
-import 'package:izobility_mobile/feature/wallet/ui/widgets/wallet_action.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/feature/profile/bloc/profile_links/profile_links_cubit.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/feature/wallet/ui/widgets/button_social_media_link.dart';
+import 'package:phoenix_mobile/feature/wallet/ui/widgets/transaction_container.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/models/api/token_data.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/logic/constants.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_sliver_app_bar.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_sliver_app_bar_delegate.dart';
+import 'package:phoenix_mobile/feature/wallet/ui/widgets/wallet_action.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
 
 class CurrencyWalletScreen extends StatefulWidget {
   const CurrencyWalletScreen(

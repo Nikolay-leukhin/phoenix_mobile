@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/models/api/token_data.dart';
-import 'package:izobility_mobile/utils/logic/constants.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/models/api/token_data.dart';
+import 'package:phoenix_mobile/utils/logic/constants.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
 
 class ChooseCoinCard extends StatelessWidget {
   final Function onTap;

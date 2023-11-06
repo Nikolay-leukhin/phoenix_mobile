@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'profile_referals_state.dart';

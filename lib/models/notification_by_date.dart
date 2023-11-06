@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/models/notification.dart';
+import 'package:phoenix_mobile/models/notification.dart';
 
 class NotificationsByDate {
   final List<Notificatian> notifications;

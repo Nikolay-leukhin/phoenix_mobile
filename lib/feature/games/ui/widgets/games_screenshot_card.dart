@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/games/ui/widgets/games_screenshot_gallery.dart';
+import 'package:phoenix_mobile/feature/games/ui/widgets/games_screenshot_gallery.dart';
 
 class GamesScreenshotCard extends StatefulWidget {
   final String imagePath;

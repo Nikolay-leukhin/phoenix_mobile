@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/games/data/games_repository.dart';
+import 'package:phoenix_mobile/feature/games/data/games_repository.dart';
 
 part 'games_state.dart';
 

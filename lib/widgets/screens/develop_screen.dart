@@ -2,9 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
 
 class DevelopingScreen extends StatelessWidget {
   @override

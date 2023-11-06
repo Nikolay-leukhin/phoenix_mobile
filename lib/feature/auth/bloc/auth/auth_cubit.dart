@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/models/login_data.dart';
-import 'package:izobility_mobile/models/register_data.dart';
+import 'package:phoenix_mobile/models/login_data.dart';
+import 'package:phoenix_mobile/models/register_data.dart';
 
 import '../../data/auth_repository.dart';
 

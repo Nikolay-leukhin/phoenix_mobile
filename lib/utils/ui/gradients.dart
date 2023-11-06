@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
 
 abstract class AppGradients {
   static const gradientGreenWhite = LinearGradient(
-    begin: Alignment(-1, -1),
-    end: Alignment(1, 1),
-    colors: [Color(0xFF1CFE15), Color(0xFF4EFDC6)],
+    end: Alignment(0.96, 0.27),
+    begin: Alignment(-0.96, -0.27),
+    colors: [Color(0xFF48BDFF), Color(0xFF0084FF)],
   );
 
   static const gradientGreenDark = LinearGradient(
@@ -39,6 +39,9 @@ abstract class AppGradients {
   static const accentGreen = LinearGradient(
     begin: Alignment(0.71, -0.71),
     end: Alignment(-0.71, 0.71),
-    colors: [Color(0xFF4EFDC6),Color(0xFF1CFE15),],
+    colors: [
+      Color(0xFF4EFDC6),
+      Color(0xFF1CFE15),
+    ],
   );
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 
 class ProductLink extends StatelessWidget {
   final String linkText;

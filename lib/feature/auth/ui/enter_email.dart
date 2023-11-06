@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/animations.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/dialogs.dart';
-import 'package:izobility_mobile/utils/logic/validators.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
-import 'package:izobility_mobile/widgets/text_field/custom_text_field.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/animations.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/dialogs.dart';
+import 'package:phoenix_mobile/utils/logic/validators.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/widgets/text_field/custom_text_field.dart';
 
 import '../bloc/auth/auth_cubit.dart';
 
@@ -45,8 +45,8 @@ class _EnterEmailScreenState extends State<EnterEmailScreen> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Image.asset(
-                  'assets/images/emerald_logo.png',
-                  width: 160,
+                  'assets/images/logo.png',
+                  width: MediaQuery.sizeOf(context).width * 0.28,
                   fit: BoxFit.fitWidth,
                 ),
                 const SizedBox(

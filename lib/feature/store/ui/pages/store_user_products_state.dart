@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
-import 'package:izobility_mobile/feature/store/data/store_repository.dart';
-import 'package:izobility_mobile/models/store/user_product.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/button_sheet/bottom_sheets.dart';
+import 'package:phoenix_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
+import 'package:phoenix_mobile/feature/store/data/store_repository.dart';
+import 'package:phoenix_mobile/models/store/user_product.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/button_sheet/bottom_sheets.dart';
 
 class StoreUserProductsScreen extends StatefulWidget {
   const StoreUserProductsScreen({super.key});

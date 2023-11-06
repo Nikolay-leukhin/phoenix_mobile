@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:izobility_mobile/feature/games/ui/widgets/games_card.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/models/game.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/feature/games/ui/widgets/games_card.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/models/game.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
 
 class GamesScreen extends StatefulWidget {
   const GamesScreen({super.key});

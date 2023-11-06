@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/profile/bloc/profile/profile_cubit.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/popup/popup_logout.dart';
-import 'package:izobility_mobile/widgets/text_field/custom_text_field.dart';
+import 'package:phoenix_mobile/feature/profile/bloc/profile/profile_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/popup/popup_logout.dart';
+import 'package:phoenix_mobile/widgets/text_field/custom_text_field.dart';
 
 class ProfileEditScreen extends StatefulWidget {
   const ProfileEditScreen({super.key});

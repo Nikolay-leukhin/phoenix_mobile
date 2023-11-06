@@ -1,4 +1,4 @@
-package com.example.izobility_mobile
+package com.example.phoenix_mobile
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 

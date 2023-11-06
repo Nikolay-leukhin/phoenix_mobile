@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:izobility_mobile/utils/ui/animations.dart';
+import 'package:phoenix_mobile/utils/ui/animations.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
               // ),
               Image.asset(
                 'assets/images/logo.png',
-                width: MediaQuery.sizeOf(context).width * 2 / 3,
+                width: MediaQuery.sizeOf(context).width * 0.4,
                 fit: BoxFit.fitWidth,
               ),
               const SizedBox(

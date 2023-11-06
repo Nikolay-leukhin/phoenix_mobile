@@ -3,10 +3,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class PopupQr extends StatefulWidget {

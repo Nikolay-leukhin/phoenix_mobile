@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 import 'package:meta/meta.dart';
 
 part 'burse_my_orders_state.dart';

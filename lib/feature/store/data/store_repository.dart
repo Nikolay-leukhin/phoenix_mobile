@@ -1,9 +1,9 @@
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/models/market_item.dart';
-import 'package:izobility_mobile/models/store/user_product.dart';
-import 'package:izobility_mobile/services/remote/api/api_service.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
-import 'package:izobility_mobile/widgets/containers/market_Item.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/models/market_item.dart';
+import 'package:phoenix_mobile/models/store/user_product.dart';
+import 'package:phoenix_mobile/services/remote/api/api_service.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/widgets/containers/market_Item.dart';
 import 'package:rxdart/rxdart.dart';
 
 enum CategoryEnum { promos, gifts, products }
