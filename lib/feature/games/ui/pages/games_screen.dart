@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
 import 'package:phoenix_mobile/utils/ui/colors.dart';
 import 'package:phoenix_mobile/utils/ui/fonts.dart';
 import 'package:phoenix_mobile/widgets/banners/game_banner.dart';
@@ -67,7 +69,7 @@ class _GamesScreenState extends State<GamesScreen> {
                         ),
                         InkWell(
                           onTap: () {
-                            // IVAN SUDA PUT IN
+                            context.go(RouteNames.cityMain);
                           },
                           child: Container(
                             width: double.infinity,
