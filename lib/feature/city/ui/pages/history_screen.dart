@@ -24,6 +24,7 @@ class _CityHistoryScreenState extends State<CityHistoryScreen> {
       ),
       body: Expanded(
         child: ListView.builder(
+            itemCount: 15,
             itemBuilder: (ctx, ind) => HistoryItem(
                 data: CityHistoryItem(
                     message: 'Там ещё кажется, провода как-то свисают странно',

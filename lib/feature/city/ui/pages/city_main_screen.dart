@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:phoenix_mobile/feature/games/ui/data/city_repository.dart';
+import 'package:phoenix_mobile/feature/city/data/city_repository.dart';
 import 'package:phoenix_mobile/utils/ui/gradients.dart';
 import 'package:phoenix_mobile/utils/utils.dart';
 import 'package:phoenix_mobile/widgets/button/button_with_icon.dart';
