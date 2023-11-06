@@ -79,7 +79,7 @@ class _MainScreenState extends State<MainScreen> {
               title: Row(
                 children: [
                   Image.asset(
-                    'assets/images/mini_logo.png',
+                    'assets/images/logo.png',
                     width: MediaQuery.sizeOf(context).width / 3.6,
                     fit: BoxFit.fitWidth,
                   ),
@@ -127,81 +127,7 @@ class _MainScreenState extends State<MainScreen> {
                               const SizedBox(
                                 height: 16,
                               ),
-                              Material(
-                                borderRadius: BorderRadius.circular(16),
-                                color: Colors.white,
-                                child: InkWell(
-                                  borderRadius: BorderRadius.circular(16),
-                                  onTap: () {
-                                    context.go(RouteNames.games);
-                                  },
-                                  child: Container(
-                                    clipBehavior: Clip.hardEdge,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(16),
-                                    ),
-                                    height: 120,
-                                    child: Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          constraints: const BoxConstraints(
-                                              maxWidth: 180),
-                                          height: double.infinity,
-                                          width: size.width * 0.28,
-                                          child: Image.asset(
-                                            "assets/images/activity_man.jpg",
-                                            fit: BoxFit.fitHeight,
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          width: 16,
-                                        ),
-                                        SizedBox(
-                                          width: size.width * 0.58,
-                                          child: Row(
-                                            children: [
-                                              SvgPicture.asset(
-                                                  "assets/icons/controller.svg"),
-                                              const SizedBox(
-                                                width: 8,
-                                              ),
-                                              Column(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  Text(
-                                                    "Активности",
-                                                    style: AppTypography
-                                                        .font18w700
-                                                        .copyWith(
-                                                            color:
-                                                                Colors.black),
-                                                  ),
-                                                  Text(
-                                                    "AR, QR, игры и т.д.",
-                                                    style: AppTypography
-                                                        .font12w400
-                                                        .copyWith(
-                                                            color: AppColors
-                                                                .grey600),
-                                                  )
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
+                              const ImproveCityBanner(),
                               BlocListener<PromoCodeCubit, PromoCodeState>(
                                 listener: (context, state) {
                                   if (state is PromoActivateProcessState) {
@@ -281,18 +207,10 @@ class _MainScreenState extends State<MainScreen> {
                                   height: 16,
                                 )
                               ],
-                              InkWell(
-                                borderRadius: BorderRadius.circular(12),
-                                onTap: () {
+                              GameBanner(
+                                onClick: () {
                                   context.go(RouteNames.games);
                                 },
-                                child: Ink(
-                                  child: Image.asset(
-                                    'assets/images/Frame 1000007448.png',
-                                    width: double.infinity,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
                               ),
                               const SizedBox(
                                 height: 16,
