@@ -373,7 +373,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             height: 190,
             child: Container(
               decoration: BoxDecoration(
-                  gradient: AppGradients.gradientGreenWhite,
+                  gradient: AppGradients.gradientBlueWhite,
                   borderRadius: BorderRadius.circular(16)),
             ),
           );

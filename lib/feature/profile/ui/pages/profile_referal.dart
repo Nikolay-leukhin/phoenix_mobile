@@ -15,7 +15,6 @@ import 'package:phoenix_mobile/widgets/button/custom_button.dart';
 import 'package:phoenix_mobile/widgets/popup/popup_qr.dart';
 import 'package:phoenix_mobile/widgets/scaffold/home_scaffold.dart';
 import 'package:phoenix_mobile/widgets/snack_bar/custom_snack_bar.dart';
-import 'package:rxdart/rxdart.dart';
 import 'package:share_plus/share_plus.dart';
 
 class ProfileReferalScreen extends StatefulWidget {
@@ -209,7 +208,7 @@ class ProfileReferalScreenState extends State<ProfileReferalScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
-                    gradient: AppGradients.shrek,
+                    gradient: AppGradients.gradientBlueWhite,
                   ),
                   child: Stack(
                     children: [
@@ -233,8 +232,8 @@ class ProfileReferalScreenState extends State<ProfileReferalScreen> {
                                   ),
                                 ),
                                 CustomButton(
-                                    gradient: AppGradients.accentGreen,
-                                    textColor: Colors.black,
+                                    gradient: AppGradients.purple,
+                                    textColor: Colors.white,
                                     fontSize: 14,
                                     height: 28,
                                     text: "Скопировать код",
@@ -397,7 +396,7 @@ class ReferalCard extends StatelessWidget {
                 alignment: Alignment.center,
                 decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    gradient: AppGradients.gradientGreenWhite),
+                    gradient: AppGradients.gradientBlueWhite),
                 child: referal.photo == null
                     ? SvgPicture.asset(
                         "assets/icons/profile.svg",

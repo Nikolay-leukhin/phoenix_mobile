@@ -29,7 +29,7 @@ class DevelopingScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(width: 2, color: Colors.green[900]!),
-                  gradient: AppGradients.gradientGreenDark),
+                  gradient: AppGradients.gradientBlueWhite),
               width: MediaQuery.sizeOf(context).width * 0.8,
               constraints: const BoxConstraints(maxWidth: 500),
               child: Column(

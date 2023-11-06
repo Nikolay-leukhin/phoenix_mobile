@@ -110,7 +110,7 @@ class OrderItem extends StatelessWidget {
                 Container(
                     padding: const EdgeInsets.all(3),
                     decoration: const BoxDecoration(
-                        shape: BoxShape.circle, gradient: AppGradients.gradientGreenWhite),
+                        shape: BoxShape.circle, gradient: AppGradients.gradientBlueWhite),
                     child: SvgPicture.asset(
                       type == BurseOrderType.general ? 'assets/icons/transfer_arrows.svg' : order.closedAt != null ? "assets/icons/completed.svg" : "assets/icons/clock.svg",
                       color: Colors.black,

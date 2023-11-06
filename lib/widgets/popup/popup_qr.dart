@@ -44,9 +44,9 @@ class _PopupQrState extends State<PopupQr> {
                   maxWidth: 360
                 ),
                 child: Image.asset(
-                  "assets/images/emerald_logo.png",
+                  "assets/images/logo.png",
                   fit: BoxFit.fitWidth,
-                  width: size.width * 0.44,
+                  width: size.width * 0.28,
                 ),
               ),
               const SizedBox(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:phoenix_mobile/utils/ui/colors.dart';
 
 abstract class AppGradients {
-  static const gradientGreenWhite = LinearGradient(
+  static const gradientBlueWhite = LinearGradient(
     end: Alignment(0.96, 0.27),
     begin: Alignment(-0.96, -0.27),
     colors: [Color(0xFF48BDFF), Color(0xFF0084FF)],
@@ -37,11 +37,14 @@ abstract class AppGradients {
   );
 
   static const accentGreen = LinearGradient(
-    begin: Alignment(0.71, -0.71),
-    end: Alignment(-0.71, 0.71),
-    colors: [
-      Color(0xFF4EFDC6),
-      Color(0xFF1CFE15),
-    ],
+    begin: Alignment(0.96, 0.28),
+    end: Alignment(-0.96, -0.28),
+    colors: [Color(0xFF48BDFF), Color(0xFF0084FF)],
+  );
+
+  static const purple = LinearGradient(
+    end: Alignment(0.96, 0.27),
+    begin: Alignment(-0.96, -0.27),
+    colors: [Color(0xFF783996), Color(0xFFA946D8)],
   );
 }

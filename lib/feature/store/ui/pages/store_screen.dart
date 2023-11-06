@@ -192,7 +192,7 @@ class _StoreScreenState extends State<StoreScreen> {
         padding: const EdgeInsets.all(16),
         height: 145,
         decoration: BoxDecoration(
-          gradient: AppGradients.shrek,
+          gradient: AppGradients.gradientBlueWhite,
           borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
@@ -218,7 +218,7 @@ class _StoreScreenState extends State<StoreScreen> {
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        gradient: AppGradients.accentGreen),
+                        gradient: AppGradients.purple),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
@@ -226,11 +226,11 @@ class _StoreScreenState extends State<StoreScreen> {
                         Text(
                           "Получить",
                           style: AppTypography.font14w700
-                              .copyWith(color: Colors.black),
+                              .copyWith(color: Colors.white),
                         ),
                         const Icon(
                           Icons.arrow_forward,
-                          color: Colors.black,
+                          color: Colors.white,
                           size: 14,
                         )
                       ],

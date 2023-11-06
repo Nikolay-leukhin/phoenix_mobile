@@ -17,7 +17,7 @@ class ButtonSwap extends StatelessWidget {
       // color: AppColors.purple600,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        gradient: AppGradients.gradientGreenWhite
+        gradient: AppGradients.gradientBlueWhite
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(100),

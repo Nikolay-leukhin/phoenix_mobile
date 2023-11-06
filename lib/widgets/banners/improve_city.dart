@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
 
 class ImproveCityBanner extends StatelessWidget {
   const ImproveCityBanner({super.key});
@@ -47,7 +47,7 @@ class ImproveCityBanner extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 26, vertical: 4),
                     decoration: BoxDecoration(
-                      color: Colors.purple,
+                      gradient: AppGradients.purple,
                       borderRadius: BorderRadius.circular(100),
                     ),
                     child: Row(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
 
 class GameBanner extends StatelessWidget {
   final Function onClick;
@@ -12,7 +13,7 @@ class GameBanner extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
       decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
               fit: BoxFit.cover,
               image: AssetImage(
                 "assets/images/space.png",
@@ -40,7 +41,7 @@ class GameBanner extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 4),
               decoration: BoxDecoration(
-                color: Colors.purple,
+                gradient: AppGradients.purple,
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Row(

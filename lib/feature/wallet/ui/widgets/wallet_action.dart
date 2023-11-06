@@ -29,7 +29,7 @@ class WalletAction extends StatelessWidget {
           width: sizeOf.width * 0.156,
           height: sizeOf.width * 0.156,
           decoration: BoxDecoration(
-              gradient: AppGradients.gradientGreenWhite,
+              gradient: AppGradients.gradientBlueWhite,
               borderRadius: BorderRadius.circular(100)),
           child: IconButton(
             onPressed: () => onTap(),
