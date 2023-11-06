@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import 'package:phoenix_mobile/feature/home/ui/home_screen.dart';
 import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
 import 'package:phoenix_mobile/localization/app_localizations.dart';
-import 'package:phoenix_mobile/localization/app_localizations_en.dart';
 import 'package:phoenix_mobile/routes/go_routes.dart';
 import 'package:phoenix_mobile/utils/ui/colors.dart';
 
@@ -30,6 +29,7 @@ class _CustomMainNavigationBarState extends State<CustomMainNavigationBar> {
     final locolize = AppLocalizations.of(context)!;
 
     return Container(
+
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.only(top: 8),
       height: 64,
@@ -55,7 +55,6 @@ class _CustomMainNavigationBarState extends State<CustomMainNavigationBar> {
             asset: 'assets/icons/wallet.svg',
             isSelected: widget.pageIndex == 1,
             onTap: () async {
-              //homeRepository.onSelectTab(1);
 
               bool isAuth = await walletRepository.checkWalletAuth();
               if (isAuth == true){
@@ -70,8 +69,6 @@ class _CustomMainNavigationBarState extends State<CustomMainNavigationBar> {
             asset: 'assets/icons/gamepad.svg',
             isSelected: widget.pageIndex == 2,
             onTap: () {
-              //homeRepository.onSelectTab(2);
-
               router.go(RouteNames.games);
             },
             name: locolize.gaming,
@@ -80,7 +77,6 @@ class _CustomMainNavigationBarState extends State<CustomMainNavigationBar> {
             asset: 'assets/icons/card.svg',
             isSelected: widget.pageIndex == 3,
             onTap: () {
-              //homeRepository.onSelectTab(3);
 
               router.go(RouteNames.basket);
             },
@@ -90,7 +86,6 @@ class _CustomMainNavigationBarState extends State<CustomMainNavigationBar> {
             asset: 'assets/icons/user.svg',
             isSelected: widget.pageIndex == 4,
             onTap: () {
-              //homeRepository.onSelectTab(4);
 
               router.go(RouteNames.profile);
             },
