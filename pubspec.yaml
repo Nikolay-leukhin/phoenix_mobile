@@ -16,6 +16,7 @@ dependencies:
   flutter_svg: ^2.0.7
   percent_indicator: ^4.2.3
   toggle_switch: ^2.1.0
+  flutter_launcher_icons: ^0.13.1
 
   flutter_dotenv: ^5.1.0
   shared_preferences: ^2.2.0
@@ -64,6 +65,14 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/logo.png
     - assets/images/splash_background.png
     - assets/abi/
     - .env
+
+flutter_launcher_icons:
+  android: false
+  ios: true
+  image_path: "assets/logo.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
