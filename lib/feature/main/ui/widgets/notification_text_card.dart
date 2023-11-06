@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/main/ui/widgets/notification_card_container.dart.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/feature/main/ui/widgets/notification_card_container.dart.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 
 import '../../../../models/notification.dart';
 

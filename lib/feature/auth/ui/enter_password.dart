@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:izobility_mobile/feature/auth/bloc/auth/auth_cubit.dart';
-import 'package:izobility_mobile/feature/auth/bloc/password_recovery/password_recovery_cubit.dart';
-import 'package:izobility_mobile/utils/logic/mask_text_field.dart';
-import 'package:izobility_mobile/utils/utils.dart';
-import 'package:izobility_mobile/utils/logic/validators.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
-import 'package:izobility_mobile/widgets/button/text_button_without_background.dart';
-import 'package:izobility_mobile/widgets/scaffold/auth_scaffold.dart';
-import 'package:izobility_mobile/widgets/text_field/custom_text_field.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/auth/auth_cubit.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/password_recovery/password_recovery_cubit.dart';
+import 'package:phoenix_mobile/utils/logic/mask_text_field.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/utils/logic/validators.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/widgets/button/text_button_without_background.dart';
+import 'package:phoenix_mobile/widgets/scaffold/auth_scaffold.dart';
+import 'package:phoenix_mobile/widgets/text_field/custom_text_field.dart';
 
 import '../../../utils/ui/animations.dart';
 import '../../../utils/ui/dialogs.dart';
@@ -40,8 +40,8 @@ class _EnterPasswordScreenState extends State<EnterPasswordScreen> {
               height: 32,
             ),
             Image.asset(
-              'assets/images/emerald_logo.png',
-              width: 160,
+              'assets/images/logo.png',
+              width: MediaQuery.sizeOf(context).width * 0.28,
               fit: BoxFit.fitWidth,
             ),
             const SizedBox(

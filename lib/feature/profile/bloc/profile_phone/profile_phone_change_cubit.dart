@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:izobility_mobile/feature/profile/bloc/profile_links/profile_links_cubit.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/feature/profile/bloc/profile_links/profile_links_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'profile_phone_change_state.dart';

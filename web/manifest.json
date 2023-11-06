@@ -1,6 +1,6 @@
 {
-    "name": "izobility_mobile",
-    "short_name": "izobility_mobile",
+    "name": "phoenix_mobile",
+    "short_name": "phoenix_mobile",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

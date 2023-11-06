@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/utils/logic/constants.dart';
+import 'package:phoenix_mobile/utils/logic/constants.dart';
 
 class Token {
   String? accessToken;

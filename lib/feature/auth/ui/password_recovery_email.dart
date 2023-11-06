@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/auth/bloc/password_recovery/password_recovery_cubit.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/widgets/scaffold/auth_scaffold.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/password_recovery/password_recovery_cubit.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/widgets/scaffold/auth_scaffold.dart';
 
 import '../../../utils/ui/animations.dart';
 import '../../../utils/ui/dialogs.dart';
@@ -38,9 +38,9 @@ class _PasswordRecoveryEmailScreenState
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            SvgPicture.asset(
-              'assets/icons/logo.svg',
-              width: 180,
+            Image.asset(
+              'assets/images/logo.png',
+              width: MediaQuery.sizeOf(context).width * 0.28,
             ),
             const SizedBox(
               height: 32,

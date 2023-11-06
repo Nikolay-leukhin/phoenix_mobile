@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/feature/wallet/ui/widgets/choose_coin_card.dart';
-import 'package:izobility_mobile/models/api/token_data.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/feature/wallet/ui/widgets/choose_coin_card.dart';
+import 'package:phoenix_mobile/models/api/token_data.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
 
 class BurseChooseCoinScreen extends StatefulWidget {
   const BurseChooseCoinScreen({super.key, required this.fromOrTo});

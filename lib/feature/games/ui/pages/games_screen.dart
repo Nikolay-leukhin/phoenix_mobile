@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/games/ui/widgets/games_card.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/models/game.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/widgets/banners/game_banner.dart';
 
 class GamesScreen extends StatefulWidget {
   const GamesScreen({super.key});
@@ -46,149 +40,78 @@ class _GamesScreenState extends State<GamesScreen> {
               SliverPadding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   sliver: SliverToBoxAdapter(
-                    child: Container(
-                      clipBehavior: Clip.hardEdge,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          gradient: AppGradients.gradientBlackGrey),
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: 300,
-                            child: Stack(
+                      child: Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 12.5, vertical: 8),
+                    decoration: BoxDecoration(
+                        image: const DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage("assets/images/bridge.png")),
+                        borderRadius: BorderRadius.circular(16)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Улучши свой город",
+                          style: AppTypography.font20w700
+                              .copyWith(color: Colors.white),
+                        ),
+                        Text(
+                          "Помоги городу стать лучше и зарабатывай",
+                          style: AppTypography.font14w400
+                              .copyWith(color: AppColors.backgroundGrey),
+                        ),
+                        Container(
+                          constraints: const BoxConstraints(maxHeight: 400),
+                          height: MediaQuery.sizeOf(context).height * 0.23,
+                        ),
+                        InkWell(
+                          onTap: () {
+                            // IVAN SUDA PUT IN
+                          },
+                          child: Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 26, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.purple,
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Positioned.fill(
-                                    child: Image.asset(
-                                  "assets/images/activity_man.jpg",
-                                  fit: BoxFit.cover,
-                                )),
-
-                                Positioned.fill(child: Container(
-                                  decoration: BoxDecoration(
-                                    gradient: LinearGradient(
-                                      begin: Alignment.topLeft,
-                                      end: Alignment.bottomRight,
-                                      colors: [
-                                        Colors.black.withOpacity(0.4),
-                                        Colors.transparent
-                                      ]
-                                    )
-                                  ),
-                                )),
-                                Positioned(
-                                  top: 0,
-                                  left: 0,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(16)
-                                        .copyWith(bottom: 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Text(
-                                          "Активности",
-                                          style: AppTypography.font18w700
-                                              .copyWith(color: Colors.white),
-                                        ),
-                                        Text(
-                                          "AR, QR, игры и т.д.",
-                                          style: AppTypography.font12w400
-                                              .copyWith(color: Colors.white),
-                                        )
-                                      ],
-                                    ),
-                                  ),
+                                Text(
+                                  "Начать",
+                                  style: AppTypography.font14w700
+                                      .copyWith(color: Colors.white),
+                                ),
+                                const Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.white,
+                                  size: 14,
                                 )
                               ],
                             ),
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(16),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Что внутри?",
-                                  style: AppTypography.font20w700
-                                      .copyWith(color: Colors.white),
-                                ),
-                                const SizedBox(
-                                  height: 20,
-                                ),
-                                Row(
-                                  children: [
-                                    SvgPicture.asset(
-                                      "assets/icons/qrscaner.svg",
-                                      color: Colors.white,
-                                      width: 24,
-                                    ),
-                                    const SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "QR Сканер",
-                                      style: AppTypography.font14w400
-                                          .copyWith(color: Colors.white),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Row(
-                                  children: [
-                                    SvgPicture.asset(
-                                      "assets/icons/aritem.svg",
-                                      color: Colors.white,
-                                      width: 24,
-                                    ),
-                                    const SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "AR Сканер",
-                                      style: AppTypography.font14w400
-                                          .copyWith(color: Colors.white),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Row(
-                                  children: [
-                                    SvgPicture.asset(
-                                      "assets/icons/armap.svg",
-                                      color: Colors.white,
-                                      width: 24,
-                                    ),
-                                    const SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "AR Карта",
-                                      style: AppTypography.font14w400
-                                          .copyWith(color: Colors.white),
-                                    ),
-                                  ],
-                                ),
-
-                                const SizedBox(height: 24,),
-                                CustomButton(
-                                    gradient: AppGradients.gradientGreenWhite,
-                                    textColor: Colors.black,
-                                    fontSize: 18,
-                                    text: "Использовать",
-                                    onTap: () {
-                                      context.go(RouteNames.cityMain);
-                                    },
-                                    width: double.infinity)
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
+                        )
+                      ],
                     ),
-                  ))
+                  ))),
+              const SliverToBoxAdapter(
+                child: SizedBox(height: 16),
+              ),
+              SliverPadding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                sliver: SliverToBoxAdapter(
+                  child: GameBanner(
+                    onClick: () {
+                      // IVAN
+                    },
+                  ),
+                ),
+              )
             ],
           ),
         ),

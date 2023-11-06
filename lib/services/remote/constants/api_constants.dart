@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/services/crypto/contracts.dart';
+import 'package:phoenix_mobile/services/crypto/contracts.dart';
 
 const int siteId = 2;
 

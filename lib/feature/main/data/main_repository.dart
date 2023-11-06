@@ -1,5 +1,5 @@
-import 'package:izobility_mobile/models/market_item.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/models/market_item.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 import 'package:rxdart/rxdart.dart';
 
 import '../../../models/story.dart';

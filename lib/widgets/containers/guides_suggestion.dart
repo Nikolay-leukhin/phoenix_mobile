@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
 import '../../utils/ui/colors.dart';
 import '../../utils/ui/fonts.dart';
 

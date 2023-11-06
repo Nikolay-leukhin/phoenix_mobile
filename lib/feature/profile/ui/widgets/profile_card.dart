@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:izobility_mobile/feature/profile/bloc/profile/profile_cubit.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/models/user.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/feature/profile/bloc/profile/profile_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/models/user.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 
 class ProfileCard extends StatefulWidget {
   const ProfileCard({

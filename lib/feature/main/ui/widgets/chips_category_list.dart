@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:izobility_mobile/feature/main/bloc/notifications/notifications_cubit.dart';
-import 'package:izobility_mobile/feature/main/data/notification_repository.dart';
-import 'package:izobility_mobile/feature/main/ui/widgets/chip_category_card.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/feature/main/bloc/notifications/notifications_cubit.dart';
+import 'package:phoenix_mobile/feature/main/data/notification_repository.dart';
+import 'package:phoenix_mobile/feature/main/ui/widgets/chip_category_card.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 
 class ChipsCategoryList extends SliverPersistentHeaderDelegate {
   @override

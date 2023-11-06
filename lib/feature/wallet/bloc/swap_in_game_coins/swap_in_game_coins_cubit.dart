@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'swap_in_game_coins_state.dart';

@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/wallet/data/wallet_repository.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
 
 class CustomSwitcher extends StatelessWidget {
   const CustomSwitcher({super.key, required this.active, required this.onTap});
@@ -58,7 +58,7 @@ class CustomSwitcher extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(1000),
-                gradient: AppGradients.gradientGreenWhite),
+                gradient: AppGradients.gradientBlueWhite),
             child: InkWell(
               borderRadius: BorderRadius.circular(1000),
               onTap: () {
@@ -72,7 +72,7 @@ class CustomSwitcher extends StatelessWidget {
                   child: SvgPicture.asset(
                     "assets/icons/transfer_arrows.svg",
                     width: 24,
-                    color: Colors.black,
+                    color: Colors.white,
                   )),
             ),
           ),

@@ -2,11 +2,11 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:izobility_mobile/feature/auth/bloc/app/app_cubit.dart';
-import 'package:izobility_mobile/utils/utils.dart';
-import 'package:izobility_mobile/widgets/button/text_button_without_background.dart';
-import 'package:izobility_mobile/widgets/keyboards/pin_keyboard.dart';
-import 'package:izobility_mobile/widgets/scaffold/auth_scaffold.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/app/app_cubit.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/widgets/button/text_button_without_background.dart';
+import 'package:phoenix_mobile/widgets/keyboards/pin_keyboard.dart';
+import 'package:phoenix_mobile/widgets/scaffold/auth_scaffold.dart';
 
 class CreatePinScreen extends StatefulWidget {
   const CreatePinScreen({super.key});
@@ -56,8 +56,8 @@ class _CreatePinScreenState extends State<CreatePinScreen> {
           children: <Widget>[
             const SizedBox(width: double.infinity, height: 30),
             Image.asset(
-              'assets/images/emerald_logo.png',
-              width: 160,
+              'assets/images/logo.png',
+              width: MediaQuery.sizeOf(context).width * 0.28,
               fit: BoxFit.fitWidth,
             ),
             const SizedBox(

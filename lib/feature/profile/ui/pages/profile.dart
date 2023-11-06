@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/auth/bloc/auth/auth_cubit.dart';
-import 'package:izobility_mobile/feature/profile/bloc/profile/profile_cubit.dart';
-import 'package:izobility_mobile/feature/profile/bloc/profile_links/profile_links_cubit.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_action_square.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_actione_tile.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_bloc_label.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_card.dart';
-import 'package:izobility_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
-import 'package:izobility_mobile/feature/store/data/store_repository.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/services/remote/constants/api_constants.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/dialogs.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/button_sheet/bottom_sheets.dart';
-import 'package:izobility_mobile/widgets/popup/popup_logout.dart';
-import 'package:izobility_mobile/widgets/snack_bar/custom_snack_bar.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/auth/auth_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/bloc/profile/profile_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/bloc/profile_links/profile_links_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_action_square.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_actione_tile.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_bloc_label.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_card.dart';
+import 'package:phoenix_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
+import 'package:phoenix_mobile/feature/store/data/store_repository.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/services/remote/constants/api_constants.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/dialogs.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/button_sheet/bottom_sheets.dart';
+import 'package:phoenix_mobile/widgets/popup/popup_logout.dart';
+import 'package:phoenix_mobile/widgets/snack_bar/custom_snack_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -373,7 +373,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             height: 190,
             child: Container(
               decoration: BoxDecoration(
-                  gradient: AppGradients.gradientGreenWhite,
+                  gradient: AppGradients.gradientBlueWhite,
                   borderRadius: BorderRadius.circular(16)),
             ),
           );

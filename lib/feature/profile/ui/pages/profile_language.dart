@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/profile/ui/widgets/profile_text_with_checkbox.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/main.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/feature/profile/ui/widgets/profile_text_with_checkbox.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/main.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
 
 class ProfileLanguageScreen extends StatefulWidget {
   const ProfileLanguageScreen({super.key});

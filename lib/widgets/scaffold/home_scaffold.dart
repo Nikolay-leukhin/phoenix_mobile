@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
 
 class HomeScaffold extends StatelessWidget {
   const HomeScaffold(

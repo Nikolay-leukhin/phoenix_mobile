@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/utils/logic/constants.dart';
+import 'package:phoenix_mobile/utils/logic/constants.dart';
 
 abstract class Validator {
   static emailValidator(String? value) {

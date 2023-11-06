@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 
 class ProfileSwitchCard extends StatefulWidget {
   final String? iconPath;

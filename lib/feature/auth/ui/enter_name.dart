@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/auth/bloc/auth/auth_cubit.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/logic/validators.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
-import 'package:izobility_mobile/widgets/scaffold/auth_scaffold.dart';
-import 'package:izobility_mobile/widgets/text_field/custom_text_field.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/auth/auth_cubit.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/logic/validators.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/widgets/scaffold/auth_scaffold.dart';
+import 'package:phoenix_mobile/widgets/text_field/custom_text_field.dart';
 
 class EnterNameScreen extends StatefulWidget {
   const EnterNameScreen({super.key});
@@ -31,9 +31,9 @@ class _EnterNameScreenState extends State<EnterNameScreen> {
           const SizedBox(
             height: 32,
           ),
-          SvgPicture.asset(
-            'assets/icons/logo.svg',
-            width: 180,
+          Image.asset(
+            'assets/images/logo.png',
+            width: MediaQuery.sizeOf(context).width * 0.28,
           ),
           const SizedBox(
             height: 32,

@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/store/bloc/store_buy/store_buy_cubit.dart';
-import 'package:izobility_mobile/feature/store/bloc/store_cubit.dart';
-import 'package:izobility_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
-import 'package:izobility_mobile/feature/store/data/store_repository.dart';
-import 'package:izobility_mobile/feature/store/ui/pages/store_user_products_state.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/button_sheet/bottom_sheets.dart';
-import 'package:izobility_mobile/widgets/containers/market_Item.dart';
-import 'package:izobility_mobile/widgets/scaffold/home_scaffold.dart';
-import 'package:izobility_mobile/widgets/snack_bar/custom_snack_bar.dart';
+import 'package:phoenix_mobile/feature/store/bloc/store_buy/store_buy_cubit.dart';
+import 'package:phoenix_mobile/feature/store/bloc/store_cubit.dart';
+import 'package:phoenix_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
+import 'package:phoenix_mobile/feature/store/data/store_repository.dart';
+import 'package:phoenix_mobile/feature/store/ui/pages/store_user_products_state.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/button_sheet/bottom_sheets.dart';
+import 'package:phoenix_mobile/widgets/containers/market_Item.dart';
+import 'package:phoenix_mobile/widgets/scaffold/home_scaffold.dart';
+import 'package:phoenix_mobile/widgets/snack_bar/custom_snack_bar.dart';
 
 class StoreScreen extends StatefulWidget {
   const StoreScreen({super.key});
@@ -192,7 +192,7 @@ class _StoreScreenState extends State<StoreScreen> {
         padding: const EdgeInsets.all(16),
         height: 145,
         decoration: BoxDecoration(
-          gradient: AppGradients.shrek,
+          gradient: AppGradients.gradientBlueWhite,
           borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
@@ -218,7 +218,7 @@ class _StoreScreenState extends State<StoreScreen> {
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        gradient: AppGradients.accentGreen),
+                        gradient: AppGradients.purple),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
@@ -226,11 +226,11 @@ class _StoreScreenState extends State<StoreScreen> {
                         Text(
                           "Получить",
                           style: AppTypography.font14w700
-                              .copyWith(color: Colors.black),
+                              .copyWith(color: Colors.white),
                         ),
                         const Icon(
                           Icons.arrow_forward,
-                          color: Colors.black,
+                          color: Colors.white,
                           size: 14,
                         )
                       ],

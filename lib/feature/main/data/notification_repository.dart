@@ -1,7 +1,7 @@
-import 'package:izobility_mobile/models/notification.dart';
-import 'package:izobility_mobile/models/notification_by_date.dart';
-import 'package:izobility_mobile/services/locale/preferences_service.dart';
-import 'package:izobility_mobile/services/remote/api/api_service.dart';
+import 'package:phoenix_mobile/models/notification.dart';
+import 'package:phoenix_mobile/models/notification_by_date.dart';
+import 'package:phoenix_mobile/services/locale/preferences_service.dart';
+import 'package:phoenix_mobile/services/remote/api/api_service.dart';
 
 class NotificationsRepository {
   final ApiService apiService;

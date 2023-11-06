@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/feature/store/ui/widgets/product_coin_card.dart';
+import 'package:phoenix_mobile/feature/store/ui/widgets/product_coin_card.dart';
 
 
 class ProductCoinPriceContainer extends StatelessWidget {

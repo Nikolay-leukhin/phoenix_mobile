@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 
 class ProfileActionTile extends StatelessWidget {
   final Function onTap;

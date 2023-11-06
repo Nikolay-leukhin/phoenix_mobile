@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
-import 'package:izobility_mobile/feature/store/data/store_repository.dart';
-import 'package:izobility_mobile/models/store/user_product.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
-import 'package:izobility_mobile/widgets/button_sheet/bottom_sheets.dart';
+import 'package:phoenix_mobile/feature/store/bloc/store_user_items/store_user_items_cubit.dart';
+import 'package:phoenix_mobile/feature/store/data/store_repository.dart';
+import 'package:phoenix_mobile/models/store/user_product.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/widgets/button_sheet/bottom_sheets.dart';
 
 class StoreUserProductsScreen extends StatefulWidget {
   const StoreUserProductsScreen({super.key});
@@ -26,7 +26,7 @@ class _StoreUserProductsScreenState extends State<StoreUserProductsScreen> {
       appBar: CustomAppBar(
         context: context,
         isBack: true,
-        text: "Мое",
+        text: " Мое",
         onTap: () => context.pop(),
       ),
       body: RefreshIndicator(
@@ -115,7 +115,7 @@ class UserProductItemWidget extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        gradient: AppGradients.accentGreen),
+                        gradient: AppGradients.purple),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
@@ -123,11 +123,11 @@ class UserProductItemWidget extends StatelessWidget {
                         Text(
                           "Активировать",
                           style: AppTypography.font14w700
-                              .copyWith(color: Colors.black),
+                              .copyWith(color: Colors.white),
                         ),
                         const Icon(
                           Icons.arrow_forward,
-                          color: Colors.black,
+                          color: Colors.white,
                           size: 14,
                         )
                       ],

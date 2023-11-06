@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/widgets/button/app_bar_back_button.dart';
+import 'package:phoenix_mobile/widgets/button/app_bar_back_button.dart';
 
 class AuthScaffold extends StatefulWidget {
   final Widget body;

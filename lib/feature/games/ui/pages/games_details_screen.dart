@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/games/bloc/games/games_cubit.dart';
-import 'package:izobility_mobile/feature/games/data/games_repository.dart';
-import 'package:izobility_mobile/feature/games/ui/widgets/games_details_stats_card.dart';
-import 'package:izobility_mobile/feature/games/ui/widgets/games_screenshot_card.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/feature/games/bloc/games/games_cubit.dart';
+import 'package:phoenix_mobile/feature/games/data/games_repository.dart';
+import 'package:phoenix_mobile/feature/games/ui/widgets/games_details_stats_card.dart';
+import 'package:phoenix_mobile/feature/games/ui/widgets/games_screenshot_card.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
 
-import 'package:izobility_mobile/utils/utils.dart';
-import 'package:izobility_mobile/widgets/button/custom_button.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/widgets/button/custom_button.dart';
 
 class GamesDetailsScreen extends StatefulWidget {
   final String gameId;

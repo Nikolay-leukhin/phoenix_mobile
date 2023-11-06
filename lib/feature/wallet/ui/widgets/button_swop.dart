@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
 
 import '../../../../utils/utils.dart';
 
@@ -17,7 +17,7 @@ class ButtonSwap extends StatelessWidget {
       // color: AppColors.purple600,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        gradient: AppGradients.gradientGreenWhite
+        gradient: AppGradients.gradientBlueWhite
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(100),

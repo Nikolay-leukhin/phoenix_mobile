@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:izobility_mobile/bloc_injector.dart';
-import 'package:izobility_mobile/feature/auth/bloc/app/app_cubit.dart';
-import 'package:izobility_mobile/feature/profile/data/user_repository.dart';
-import 'package:izobility_mobile/localization/app_localizations.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/bloc_injector.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/app/app_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/localization/app_localizations.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 import 'package:trust_wallet_core_lib/trust_wallet_core_lib.dart';
 
 import 'services/locale/export_locale_services.dart';

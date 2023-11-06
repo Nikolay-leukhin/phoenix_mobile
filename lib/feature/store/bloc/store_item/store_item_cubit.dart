@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:izobility_mobile/feature/store/data/store_repository.dart';
-import 'package:izobility_mobile/models/market_item.dart';
+import 'package:phoenix_mobile/feature/store/data/store_repository.dart';
+import 'package:phoenix_mobile/models/market_item.dart';
 import 'package:meta/meta.dart';
 
 part 'store_item_state.dart';

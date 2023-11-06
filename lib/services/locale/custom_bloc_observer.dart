@@ -3,8 +3,8 @@ import 'dart:developer';
 
 // Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:izobility_mobile/feature/auth/bloc/app/app_cubit.dart';
-import 'package:izobility_mobile/routes/go_routes.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/app/app_cubit.dart';
+import 'package:phoenix_mobile/routes/go_routes.dart';
 
 class CustomBlocObserver extends BlocObserver {
   CustomBlocObserver({required this.authNotifier});

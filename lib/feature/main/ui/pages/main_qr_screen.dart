@@ -4,8 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/feature/wallet/bloc/promo_code/promo_code_cubit.dart';
-import 'package:izobility_mobile/utils/ui/colors.dart';
+import 'package:phoenix_mobile/feature/wallet/bloc/promo_code/promo_code_cubit.dart';
+import 'package:phoenix_mobile/utils/ui/colors.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class MainQrScreen extends StatefulWidget {

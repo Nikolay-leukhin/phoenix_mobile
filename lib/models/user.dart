@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/models/user_details.dart';
+import 'package:phoenix_mobile/models/user_details.dart';
 
 class UserModel {
   int? id;

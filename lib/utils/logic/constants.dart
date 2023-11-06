@@ -1,4 +1,4 @@
-import 'package:izobility_mobile/feature/store/data/store_repository.dart';
+import 'package:phoenix_mobile/feature/store/data/store_repository.dart';
 
 class AppStrings {
   static const String emailRegExp =

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:izobility_mobile/utils/utils.dart';
+import 'package:phoenix_mobile/utils/utils.dart';
 
 class CustomOutlineButton extends StatelessWidget {
   const CustomOutlineButton({

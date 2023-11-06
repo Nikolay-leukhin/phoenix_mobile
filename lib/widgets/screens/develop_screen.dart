@@ -2,9 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:izobility_mobile/utils/ui/fonts.dart';
-import 'package:izobility_mobile/utils/ui/gradients.dart';
-import 'package:izobility_mobile/widgets/app_bar/custom_app_bar.dart';
+import 'package:phoenix_mobile/utils/ui/fonts.dart';
+import 'package:phoenix_mobile/utils/ui/gradients.dart';
+import 'package:phoenix_mobile/widgets/app_bar/custom_app_bar.dart';
 
 class DevelopingScreen extends StatelessWidget {
   @override
@@ -29,7 +29,7 @@ class DevelopingScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(width: 2, color: Colors.green[900]!),
-                  gradient: AppGradients.gradientGreenDark),
+                  gradient: AppGradients.gradientBlueWhite),
               width: MediaQuery.sizeOf(context).width * 0.8,
               constraints: const BoxConstraints(maxWidth: 500),
               child: Column(

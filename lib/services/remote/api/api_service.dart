@@ -1,12 +1,12 @@
 import 'dart:developer';
 
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:izobility_mobile/models/api/token.dart';
-import 'package:izobility_mobile/services/locale/preferences_service.dart';
+import 'package:phoenix_mobile/models/api/token.dart';
+import 'package:phoenix_mobile/services/locale/preferences_service.dart';
 import 'package:dio/dio.dart';
-import 'package:izobility_mobile/services/remote/constants/api_constants.dart';
-import 'package:izobility_mobile/services/remote/constants/api_endpoints.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/services/remote/constants/api_constants.dart';
+import 'package:phoenix_mobile/services/remote/constants/api_endpoints.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:trust_wallet_core_lib/trust_wallet_core_ffi.dart';
 import 'package:trust_wallet_core_lib/trust_wallet_core_lib.dart';

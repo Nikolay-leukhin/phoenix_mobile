@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:izobility_mobile/services/crypto/contracts.dart';
-import 'package:izobility_mobile/services/remote/constants/api_constants.dart';
-import 'package:izobility_mobile/utils/logic/enums.dart';
+import 'package:phoenix_mobile/services/crypto/contracts.dart';
+import 'package:phoenix_mobile/services/remote/constants/api_constants.dart';
+import 'package:phoenix_mobile/utils/logic/enums.dart';
 import 'package:trust_wallet_core_lib/trust_wallet_core_ffi.dart';
 import 'package:hex/hex.dart';
 import 'package:trust_wallet_core_lib/trust_wallet_core_lib.dart';
