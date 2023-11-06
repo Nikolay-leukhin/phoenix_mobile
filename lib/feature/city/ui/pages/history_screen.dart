@@ -22,16 +22,19 @@ class _CityHistoryScreenState extends State<CityHistoryScreen> {
         onTap: context.pop,
         text: 'История',
       ),
-      body: Expanded(
-        child: ListView.builder(
-            itemCount: 15,
-            itemBuilder: (ctx, ind) => HistoryItem(
-                data: CityHistoryItem(
-                    message: 'Там ещё кажется, провода как-то свисают странно',
-                    images: [],
-                    reward: 15,
-                    fulfilled: ind % 2 == 0,
-                    id: ind.toString()))),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+        child: Expanded(
+          child: ListView.builder(
+              itemCount: 15,
+              itemBuilder: (ctx, ind) => HistoryItem(
+                  data: CityHistoryItem(
+                      message: 'Там ещё кажется, провода как-то свисают странно',
+                      images: [],
+                      reward: 15,
+                      fulfilled: ind % 2 == 0,
+                      id: ind.toString()))),
+        ),
       ),
     );
   }

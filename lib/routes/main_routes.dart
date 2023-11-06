@@ -46,4 +46,5 @@ final mainRoutesNames = [
   RouteNames.storeUserProducts,
   RouteNames.cityMain,
   RouteNames.cityHistory,
+  RouteNames.cityAppeal,
 ];

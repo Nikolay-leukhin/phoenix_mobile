@@ -89,4 +89,5 @@ abstract class RouteNames {
 
   static const String cityMain = '/city';
   static const String cityHistory = '/city/history';
+  static const String cityAppeal = '/city/appeal';
 }

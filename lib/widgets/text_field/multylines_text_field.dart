@@ -2,18 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:phoenix_mobile/utils/utils.dart';
 
 class MultilineTextField extends StatelessWidget {
-  const MultilineTextField({super.key, required this.controller, this.onChange, });
+  const MultilineTextField({super.key, required this.controller, this.onChange, this.readOnly = false, this.initialText});
 
   final TextEditingController controller;
+  final bool readOnly;
   final Function(String)? onChange;
+  final String? initialText;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       height: 120 * MediaQuery.sizeOf(context).width / 360,
-      child: TextField(
+      child: TextFormField(
+        initialValue: initialText,
         maxLines: 5,
+        readOnly: readOnly,
         onChanged: onChange,
         decoration: InputDecoration(
             isDense: true,
