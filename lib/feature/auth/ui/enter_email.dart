@@ -31,94 +31,97 @@ class _EnterEmailScreenState extends State<EnterEmailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: GestureDetector(
-        onTap: () async {
-          FocusScope.of(context).unfocus();
-        },
-        child: Scaffold(
-          backgroundColor: Colors.white,
-          resizeToAvoidBottomInset: false,
-          body: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 100, 16, 0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Image.asset(
-                  'assets/images/logo.png',
-                  width: MediaQuery.sizeOf(context).width * 0.28,
-                  fit: BoxFit.fitWidth,
-                ),
-                const SizedBox(
-                  height: 32,
-                ),
-                Column(
-                  children: [
-                    CustomTextField(
-                      labelText: "Ваша почта",
-                      keyboardType: TextInputType.emailAddress,
-                      errorText: fieldError,
-                      error: fieldError != null,
-                      controller: emailController,
-                      width: double.infinity,
-                      onChange: (v) {
-                        fieldError = Validator.emailValidator(v);
-                        if (fieldError == null) {
-                          buttonActive = true;
-                          log((v ?? "").isNotEmpty.toString());
-                        } else {
-                          buttonActive = false;
-                        }
-                        log(fieldError.toString());
-                        setState(() {});
-                      },
-                    ),
-                    const SizedBox(
-                      height: 16,
-                    ),
-                    CustomTextField.withOneIcon(
-                      obscured: false,
-                      labelText: "Реферальный код",
-                      controller: referalCodeController,
-                      width: double.infinity,
-                      suffixIconCallback: () {
-                        context.push(RouteNames.mainQr, extra: {
-                          'onFound': (f) {
-                            referalCodeController.text = f.code.toString();
+    return Container(
+      color: Colors.white,
+      child: SafeArea(
+        child: GestureDetector(
+          onTap: () async {
+            FocusScope.of(context).unfocus();
+          },
+          child: Scaffold(
+            backgroundColor: Colors.white,
+            resizeToAvoidBottomInset: false,
+            body: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 100, 16, 0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset(
+                    'assets/images/logo.png',
+                    width: MediaQuery.sizeOf(context).width * 0.28,
+                    fit: BoxFit.fitWidth,
+                  ),
+                  const SizedBox(
+                    height: 32,
+                  ),
+                  Column(
+                    children: [
+                      CustomTextField(
+                        labelText: "Ваша почта",
+                        keyboardType: TextInputType.emailAddress,
+                        errorText: fieldError,
+                        error: fieldError != null,
+                        controller: emailController,
+                        width: double.infinity,
+                        onChange: (v) {
+                          fieldError = Validator.emailValidator(v);
+                          if (fieldError == null) {
+                            buttonActive = true;
+                            log((v ?? "").isNotEmpty.toString());
+                          } else {
+                            buttonActive = false;
                           }
-                        });
-                      },
-                      suffixIconChild: SvgPicture.asset(
-                        'assets/icons/scaner.svg',
-                        color: AppColors.primary,
+                          log(fieldError.toString());
+                          setState(() {});
+                        },
                       ),
-                    ),
-                    const SizedBox(
-                      height: 16,
-                    ),
-                    CustomButton(
-                        text: 'Далее',
-                        onTap: () {
-                          Dialogs.showModal(
-                              context,
-                              const Center(
-                                child: AppAnimations.circularProgressIndicator,
-                              ));
-
-                          BlocProvider.of<AuthCubit>(context)
-                              .checkEmail(emailController.text.trim(),
-                                  referalCodeController.text)
-                              .then((accountState) {
-                            context.push(RouteNames.authEnterPassword);
-
-                            Dialogs.hide(context);
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      CustomTextField.withOneIcon(
+                        obscured: false,
+                        labelText: "Реферальный код",
+                        controller: referalCodeController,
+                        width: double.infinity,
+                        suffixIconCallback: () {
+                          context.push(RouteNames.mainQr, extra: {
+                            'onFound': (f) {
+                              referalCodeController.text = f.code.toString();
+                            }
                           });
                         },
-                        isActive: buttonActive,
-                        width: double.infinity),
-                  ],
-                )
-              ],
+                        suffixIconChild: SvgPicture.asset(
+                          'assets/icons/scaner.svg',
+                          color: AppColors.primary,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      CustomButton(
+                          text: 'Далее',
+                          onTap: () {
+                            Dialogs.showModal(
+                                context,
+                                const Center(
+                                  child: AppAnimations.circularProgressIndicator,
+                                ));
+
+                            BlocProvider.of<AuthCubit>(context)
+                                .checkEmail(emailController.text.trim(),
+                                    referalCodeController.text)
+                                .then((accountState) {
+                              context.push(RouteNames.authEnterPassword);
+
+                              Dialogs.hide(context);
+                            });
+                          },
+                          isActive: buttonActive,
+                          width: double.infinity),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ),

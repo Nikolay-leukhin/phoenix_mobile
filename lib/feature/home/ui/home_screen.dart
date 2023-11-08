@@ -7,7 +7,6 @@ import 'package:phoenix_mobile/localization/app_localizations.dart';
 import 'package:phoenix_mobile/routes/go_routes.dart';
 import 'package:phoenix_mobile/utils/ui/colors.dart';
 import 'package:phoenix_mobile/utils/ui/fonts.dart';
-import 'package:phoenix_mobile/widgets/navigator_bar/custom_main_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.body, required this.pageIndex});
@@ -25,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     GoRouter router = GoRouter.of(context);
 
     final walletRepository = RepositoryProvider.of<WalletRepository>(context);
-    final locolize = AppLocalizations.of(context)!;
+    final localize = AppLocalizations.of(context)!;
 
     return WillPopScope(
       onWillPop: () async => false,
@@ -51,7 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
               notchMargin: 8,
               color: Colors.white,
               surfaceTintColor: Colors.transparent,
-              height: 80,
               shape: const CircularNotchedRectangle(),
               elevation: 0,
               child: Row(
@@ -64,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () {
                       router.go(RouteNames.main);
                     },
-                    name: locolize.main,
+                    name: localize.main,
                   ),
                   NavigatorBarItem(
                     asset: 'assets/icons/wallet.svg',
@@ -77,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       router.go('${RouteNames.wallet}/${isAuth.toString()}');
                     },
-                    name: locolize.wallet,
+                    name: localize.wallet,
                   ),
                   Opacity(
                       opacity: widget.pageIndex == 2 ? 1 : 0,
@@ -91,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () {
                       router.go(RouteNames.basket);
                     },
-                    name: locolize.shop,
+                    name: localize.shop,
                   ),
                   NavigatorBarItem(
                     asset: 'assets/icons/user.svg',
@@ -99,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () {
                       router.go(RouteNames.profile);
                     },
-                    name: locolize.profile,
+                    name: localize.profile,
                   ),
                 ],
               ),
@@ -127,10 +125,8 @@ class NavigatorBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      child: Container(
-        // padding: const EdgeInsets.only(top: 12),
-
-        width: MediaQuery.of(context).size.width / 5,
+      child: SizedBox(
+        width: (MediaQuery.of(context).size.width - 10) / 5,
         height: MediaQuery.of(context).size.width / 5,
         child: Center(
           child: Column(

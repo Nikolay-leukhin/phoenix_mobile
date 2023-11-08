@@ -42,7 +42,6 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     final localize = AppLocalizations.of(context)!;
-    final size = MediaQuery.sizeOf(context);
 
     return GestureDetector(
       onTap: () {
@@ -55,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
           if (state is StoreBuyLoading) {
             showDialog(
                 context: context,
-                builder: (context) => Center(
+                builder: (context) => const Center(
                       child: CircularProgressIndicator.adaptive(),
                     ));
           } else if (state is StoreBuyFailure) {

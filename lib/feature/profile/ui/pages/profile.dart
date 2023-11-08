@@ -103,7 +103,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   margin: const EdgeInsets.only(bottom: 16),
                                   width: double.infinity,
                                   decoration: BoxDecoration(
-                                      gradient: AppGradients.gradientGreenDark,
+                                      gradient: AppGradients.gradientBlueWhite,
                                       borderRadius: BorderRadius.circular(16)),
                                   child: Column(
                                     crossAxisAlignment:

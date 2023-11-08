@@ -13,6 +13,7 @@ class ImproveCityBanner extends StatelessWidget {
     final size = MediaQuery.sizeOf(context);
 
     return Container(
+      padding: const EdgeInsets.only(left: 12),
       width: double.infinity,
       decoration: BoxDecoration(
           gradient: AppGradients.accentGreen,
@@ -21,8 +22,7 @@ class ImproveCityBanner extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            padding: const EdgeInsets.only(left: 12),
+          SizedBox(
             width: size.width * 0.5 + 12,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

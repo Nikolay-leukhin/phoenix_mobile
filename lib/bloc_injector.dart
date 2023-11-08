@@ -39,7 +39,6 @@ import 'package:phoenix_mobile/routes/go_routes.dart';
 import 'package:phoenix_mobile/services/crypto/api_cripto.dart';
 import 'package:phoenix_mobile/services/locale/export_locale_services.dart';
 import 'package:phoenix_mobile/services/remote/api/api_service.dart';
-import 'package:phoenix_mobile/services/locale/export_locale_services.dart';
 
 import 'feature/auth/bloc/auth/auth_cubit.dart';
 
