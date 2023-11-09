@@ -13,15 +13,38 @@ class UserRepository {
   final PreferencesService preferences;
 
   UserModel user = UserModel();
+  Map<String, dynamic>? _userJson;
 
   List<ReferalModel> referalList = [];
 
   BehaviorSubject<LoadingStateEnum> userDetailsDataStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
   Future<void> loadUserDataFromCache() async {
     final cachedUser = await preferences.getUser();
     user = cachedUser!;
+  }
+
+  Future<Map<String, dynamic>> getUserJson() async {
+    if (_userJson == null) {
+      final Map<String, dynamic> response =
+      await apiService.user.getUserDetailsInfo(userId: user.id!);
+
+      _userJson = response;
+    }
+    final Map<String, dynamic> r = {};
+    r.addAll({
+      "contact": _userJson!['email'],
+      "score": 0.0,
+      'jwt': apiService.getJwt()
+    });
+    print(r);
+    r.addAll(_userJson!);
+    r['id'] = int.parse(r['id']);
+    r['date_registrated'] = r['created_at'];
+    r['date_updated'] = r['updated_at'];
+    print(r);
+    return r;
   }
 
   Future<dynamic> loadUserDetailsInfo() async {
@@ -39,8 +62,8 @@ class UserRepository {
     }
     try {
       final response =
-          await apiService.user.getUserDetailsInfo(userId: cachedUser.id!);
-
+      await apiService.user.getUserDetailsInfo(userId: cachedUser.id!);
+      _userJson = response;
       final UserDetailsModel userDetails = UserDetailsModel.fromJson(response);
 
       user = cachedUser;

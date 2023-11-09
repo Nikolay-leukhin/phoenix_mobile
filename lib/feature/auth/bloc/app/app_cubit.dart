@@ -73,16 +73,20 @@ class AppCubit extends Cubit<AppState> {
   }
 
   DateTime? activeWas;
+  bool _unityIsRunning = false;
+
+  void runUnity() => _unityIsRunning = true;
 
   void pauseApp() async {
-    activeWas = DateTime.now();
+    if (!_unityIsRunning) activeWas = DateTime.now();
   }
 
   void resumeApp() {
     if (state is! AppUnAuthState &&
-        DateTime.now().difference(activeWas ?? DateTime.now()).inSeconds > 20) {
+        DateTime.now().difference(activeWas ?? DateTime.now()).inSeconds > 60) {
       emitPinState();
     }
     activeWas = null;
+    _unityIsRunning = false;
   }
 }

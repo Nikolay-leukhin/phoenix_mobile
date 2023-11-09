@@ -11,6 +11,21 @@ import 'package:rxdart/subjects.dart';
 import 'package:trust_wallet_core_lib/trust_wallet_core_ffi.dart';
 import 'package:trust_wallet_core_lib/trust_wallet_core_lib.dart';
 
+class UnityWallet {
+  double bnbInGame;
+  double tdxInGame;
+  double busdInGame;
+
+  UnityWallet({this.bnbInGame = 0, this.busdInGame = 0, this.tdxInGame = 0});
+
+  Map<String, dynamic> toJson(double emerald) => {
+    "zboom_ingame": emerald,
+    "tdx_ingame": tdxInGame,
+    "bnb_ingame": bnbInGame,
+    "busd_ingame": busdInGame
+  };
+}
+
 class WalletRepository {
   final ApiService apiService;
   final PreferencesService prefs;
@@ -26,6 +41,8 @@ class WalletRepository {
 
   double emeraldInGameBalance = 0;
   double emeraldInWalletBalance = 0;
+
+  UnityWallet unityWallet = UnityWallet();
 
   int burseGeneralCurrentPageIndex = 0;
   int burseMyCurrentPageIndex = 0;
@@ -47,25 +64,25 @@ class WalletRepository {
   TokenData? activeSwapTockenFrom;
 
   BehaviorSubject<LoadingStateEnum> emeraldInGameStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
   BehaviorSubject<LoadingStateEnum> emeraldInWalletStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
   BehaviorSubject<LoadingStateEnum> burseGeneralOrdersStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
   BehaviorSubject<LoadingStateEnum> burseMyOrdersStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
   BehaviorSubject<LoadingStateEnum> coinsOnChainStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
   BehaviorSubject<LoadingStateEnum> coinsInGameStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
   BehaviorSubject<LoadingStateEnum> sendInGameTokenStream =
-      BehaviorSubject.seeded(LoadingStateEnum.wait);
+  BehaviorSubject.seeded(LoadingStateEnum.wait);
 
 // ---------------------------------------
 
@@ -155,7 +172,7 @@ class WalletRepository {
     print(coinId);
     if (coinId == 18) {
       transactionCode =
-          await apiCripto.sendBnb(walletModel!, amount, techWalletAddress);
+      await apiCripto.sendBnb(walletModel!, amount, techWalletAddress);
     } else if (coin == null) {
       throw Exception("COIN IS NULL swapCoinOnChainToInGame method");
     } else {
@@ -180,6 +197,14 @@ class WalletRepository {
       emeraldInGameStream.add(LoadingStateEnum.fail);
       rethrow;
     }
+  }
+
+  Future<Map<String, dynamic>> getUnityBalances() async {
+    final data = await apiService.wallet.getEmeraldCoin();
+    Map<String, dynamic> result = unityWallet.toJson(emeraldInGameBalance)
+      ..addAll(data);
+
+    return result;
   }
 
   Future<void> sendInGameCoinByEmail(
@@ -237,14 +262,6 @@ class WalletRepository {
       final res = await apiService.wallet.getUserGameTokens();
       coinsInGame.clear();
 
-      for (var json in res) {
-        try {
-          coinsInGame.add(TokenData.fromJson(json));
-        } catch (e) {
-          print(e);
-        }
-      }
-
       await loadEmeraldCoin();
 
       final emeraldCoin = TokenData(
@@ -252,13 +269,27 @@ class WalletRepository {
           id: "0",
           url: '',
           imageUrl:
-              'https://w7.pngwing.com/pngs/967/250/png-transparent-z-letter-font-letter-z-miscellaneous-angle-english.png',
+          'https://w7.pngwing.com/pngs/967/250/png-transparent-z-letter-font-letter-z-miscellaneous-angle-english.png',
           name: "Z-BOOM",
           rubleExchangeRate: "0",
           description: '');
 
       coinsInGame.add(emeraldCoin);
 
+      for (var json in res) {
+        try {
+          if (json['id'] == '17') {
+            unityWallet.busdInGame = double.parse(json['amount'] ?? "0");
+          } else if (json['id'] == '18') {
+            unityWallet.bnbInGame = double.parse(json['amount'] ?? "0");
+          } else if (json['id'] == '29') {
+            unityWallet.tdxInGame = double.parse(json['amount'] ?? "0");
+          }
+          coinsInGame.add(TokenData.fromJson(json));
+        } catch (e) {
+          print(e);
+        }
+      }
       coinsInGame.sort((item1, item2) =>
           double.parse(item2.amount).compareTo(double.parse(item1.amount)));
 
@@ -371,7 +402,7 @@ class WalletRepository {
     final gasPrice = await ApiCripto.clientBSC.getGasPrice();
 
     gas = (gasPrice.getInWei * gasLimit / BigInt.from(1000000000000000000))
-            .toDouble() *
+        .toDouble() *
         0.97865;
   }
 

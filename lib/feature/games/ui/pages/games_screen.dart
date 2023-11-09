@@ -1,5 +1,13 @@
+import 'dart:convert';
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:phoenix_mobile/feature/auth/bloc/app/app_cubit.dart';
+import 'package:phoenix_mobile/feature/profile/data/user_repository.dart';
+import 'package:phoenix_mobile/feature/wallet/data/wallet_repository.dart';
 import 'package:phoenix_mobile/localization/app_localizations.dart';
 import 'package:phoenix_mobile/routes/go_routes.dart';
 import 'package:phoenix_mobile/utils/ui/colors.dart';
@@ -15,6 +23,31 @@ class GamesScreen extends StatefulWidget {
 }
 
 class _GamesScreenState extends State<GamesScreen> {
+  void loadUnity() async {
+    const String channel = 'unity_activity';
+    const platform = MethodChannel(channel);
+
+    final Future<Map<String, dynamic>> userBalances =
+    RepositoryProvider.of<WalletRepository>(context).getUnityBalances();
+    final Future<Map<String, dynamic>> userData =
+    RepositoryProvider.of<UserRepository>(context).getUserJson();
+
+    Future.wait([userData, userBalances]).then((value) async {
+      final json = {}
+        ..addAll(value[0])
+        ..addAll(value[1]);
+      try {
+        BlocProvider.of<AppCubit>(context).runUnity();
+        log('trying to start');
+        final data = await platform.invokeMethod('startUnity', {'user': jsonEncode(json)});
+        log(data.toString());
+      } catch (e) {
+        log(e.toString());
+      }
+
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final localize = AppLocalizations.of(context)!;

@@ -48,6 +48,8 @@ class ApiService {
     initialServices();
   }
 
+  String getJwt() => dio.options.headers['Authorization'];
+
   void initialServices() async {
     token = await preferencesService.getToken() ?? Token.zero();
 
